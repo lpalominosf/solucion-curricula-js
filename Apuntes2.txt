@@ -1,0 +1,35 @@
+agile es una cultura, forma de pensar. 
+Martin Fowler preocupacion por la pronunciacion
+Alistair Cockburn pensaba que no podian llegar a un acuerdo 
+La alianza agil
+reunion duro dos dias
+conjunto de valores basados en la confianza y el respeto mutuo y la promocion de modelos organizativos basados en personas, colaboracion y construccion de los tipos de comunidades organizacionales. 
+tratar de hacer lo mejor por el cliente y entregar algo oportuno y tangible
+agile alliance
+convocados por Kent Beck (extreme programming beck) 
+15504
+valoramos mas a los individuos y su interaccion que a los procesos y las herramientas
+hay tareas que requieren talento y necesitan personas que lo aporten y trabajen con la actitud adecuada.
+know-how
+Los procesos son una ayuda, un soporte para guiar el trabajo. 
+valoramos mas el software que funciona que la documentacion exhaustiva. 
+el manifiesto agil da como inutil la documentacion innecesaria 
+la comunicacion a traves de ctos. no ofrece la riqueza y generacion que logra la comunicacion directa entre las personas. Si la organizacion y los equipos se comunican a traves de dctos. ademas de ocultar la riqueza de la interaccion con el productor, forman barreras de burocracia entre deptos. o entre personas. 
+valoramos mas la colaboracion con el cliente que la negociacion contractual. 
+
+el objetivo de un proyecto agil es proporcionar el mayor valor posible al producto. 
+los principales valores de la gestion agil son la anticipacion y la adaptacion. 
+
+12 principios del manifiesto agil 
+1.- nuestra principal prioridad es satisfacer al cliente a traves de la entrega temprana y continua de software de valor.
+2.- son bienvenidos los requisitos cambiantes.
+3.- entregar con frecuencia software que funcione en periodos de un par de semanas hasta un par de meses con preferencia en los periodos breves. 
+4.- las personas del negocio y los desarrolladores deben trabajar juntos de forma cotidiana a traves del proyecto. 
+5.-Construcción de proyectos en torno a individuos motivados, dándoles la oportunidad y el respaldo que necesitan y procurándoles confianza para que realicen la tarea.
+6.-La forma más eficiente y efectiva de comunicar información de ida y vuelta dentro de un equipo de desarrollo es mediante la conversación cara a cara.
+7.-El software que funciona es la principal medida del progreso.
+8.-Los procesos ágiles promueven el desarrollo sostenido. Los patrocinadores, desarrolladores y usuarios deben mantener un ritmo constante de forma indefinida.
+9.-La atención continua a la excelencia técnica enaltece la agilidad.
+10.-La simplicidad como arte de maximizar la cantidad de trabajo que se hace, es esencial.
+11.-Las mejores arquitecturas, requisitos y diseños emergen de equipos que se autoorganizan.
+12.-En intervalos regulares, el equipo reflexiona sobre la forma de ser más efectivo y ajusta su conducta en consecuencia.

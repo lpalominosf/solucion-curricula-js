@@ -1,0 +1,324 @@
+https://laboratoria1.gitbooks.io/sel-javascript-pre-admision/
+
+
+quiz presencial: evalua lo que estudiamos 
+
+REPASO: 
+PARSE-INT: lo que hace es convertir una letra en numero 
+de la a-f toma como referencia numeros del 10-15 
+si no tiene base automaticamente asigna 10
+
+
+string y number son tipos de datos
+
+parseInt se utiliza para pasar un string a number 
+
+sirve para sacar decimales a un numero, lo deja como entero
+
+variable es una "caja" que guarda datos
+
+var nameStudent 
+camel case: mayuscula entre una palabra y otra
+
+que tipo de string se puede convertir a number: numero con comilla ??? 
+promt("hola"); sirve para que aparezca un cuadro de texto
+alert envia solo un popup, promt sirve para el ingreso de datos ademas del popup
+
+toUpperCase: convierte en mayusculas
+var name= "carmen";
+name.toUpperCase();
+
+toLowerCase: convierte en minuscula
+var name= "CARMEN";
+name.toLowerCase();
+
+slice: corta una palabra 
+la posicion comienza desde 0 
+
+name.slice(1);
+
+"armen"
+name.slice(1, 4);
+
+"arm"
+
+indexOf: me devuelve la posicion del string que yo le pase 
+
+name.indexOf("r");
+
+2
+
+var frase = "hola chicasss";
+
+undefined
+
+
+frase.indexOf("chicasss");
+
+5 
+
+charAt: devuelve posicion de la variable pero su letra
+
+
+PARA MAÑANA LEER BIENVENIDA 
+ESTRUCTURAS CONDICIONALES Y REPETITIVAS
+INTRODUCCION A FUNCIONES
+Y CASOS PRACTICOS
+
+
+OPENING
+[ ] ¿Por qué quisiéramos modificar el control de flujo de un programa? 
+[ ] ¿Cuáles son las formas de modificar el flujo de un programa? Dibuja una representación de cada una
+[ ] ¿Qué significa else de una sentencia if...else? Dame un ejemplo
+[ ] ¿Cuál es la diferencia entre un while y un do?
+[ ] ¿Cuáles son las 3 partes (sentencias) esenciales de un for? Dame un ejemplo
+[ ] ¿Para qué utilizamos break y continue en un for? Dame un ejemplo
+[ ] Explica, con una analogía y en tus propias palabras, qué es una función. Dibuja el concepto de una función
+[ ] ¿Por qué son importantes las funciones en la programación?
+[ ] ¿Qué se entiende por DRY?
+[ ] ¿Qué significa "llamar" a una función?
+[ ] ¿Qué sería un "input" (entrada) para una función y qué sería el equivalente del "output" (salida)?
+[ ] ¿Cuál es la diferencia entre un parámetro y un argumento de una función?
+[ ] ¿Qué significa el valor de return de una función?
+[ ] ¿Qué sucede cuando una función tiene varios valores de return?
+[ ] ¿Por qué podemos resolver problemas más complejos sabiendo estructuras condicionales, estructuras repetitivas y funciones? Dame un ejemplo
+
+creamos programas de computacion para resolver problemas.
+un programa es un conjunto de instrucciones que siguen las computadoras. Ese conjunto de instrucciones resuelven un problema. 
+Para crear programas mas complejos (diferentes del que hicimos al convertir Cº a Fº) necesitamos expandir nuestro conocimiento sobre el control de flujo de un programa y las estructuras que existen para modificarlo. 
+en vez de instrucciones, usaremos SENTENCIAS: es el equivalente a una oracion en un lenguaje humano, un programa en JS es una lista de "Sentencias JS" o sea un conjunto de oraciones que le dicen al PC que hacer 
+
+1.- FLUJO EN LINEA RECTA 
+de arriba hacia abajo una por una
+---------------------->
+
+var name = 'Michelle';
+console.log('Hola ' + name);
+console.log('Qué nombre tan largo tienes!');
+// returns > Hola Michelle
+//           Qué nombre tan largo tienes!
+
+2.- FLUJO CONDICIONAL
+escogemos entre dos rutas diferentes basados en un valos boolean
+se escribe con el keyword if, se utiliza para ejecutar codigo SI Y SOLO SI una condicion es verdadera.
+"si algo es verdad, haz x"
+tiene dos partes principales: condicion y cuerpo
+condicion: boolean () 
+cuerpo: una o mas sentencias JS que se ejecutaran si y solo si la condicion es verdadera (boolean true)
+cuando necesitamos ejecutar multiples sentencias podemos encerrarlas en ({y}) 
+una sentencia entre {} es llamada bloque de codigo
+el programa verifica si la longitud del string es mayor a 7 (en el ejemplo es name Michelle (8)) como este caso es true se imprime en la consola la segunda linea de codigo. 
+
+SENTENCIA IF ELSE
+else se utiliza junto con if para crear dos rutas de ejecucion 
+ejemplo:
+var name = 'Ana';
+console.log('Hola ' + name);
+if (name.length > 7) {
+  console.log('Qué nombre tan largo tienes!');
+} else {
+  console.log('Tu nombre no es muy largo');
+}
+
+// returns > Hola Ana
+//           Tu nombre no es muy largo
+
+en el caso de Ana, la longitud es < 7 por lo tanto se ejecuta el mensaje alternativo, que corresponde al segundo.
+
+Si la condición es true, se ejecutan las sentencias del primer cuerpo; de lo contrario, se ejecutan las sentencias del segundo cuerpo.
+
+if (condición) {
+  Sentencias a ejecutar si condición es VERDADERA
+} else {
+  Sentencias a ejecutar si condición es FALSA
+}
+if..else 
+
+SWITCH 
+CASE 
+BREAK rompe el ciclo de codigo
+ayuda a elegir entre varias opciones y de acuerdo a eso me da una alerta.
+
+FLUJO REPETITIVO: BUCLES
+loops en ingles, permiten ejecutar un codigo varias veces, dependiendo de si una condicion sigue siendo verdadera. 
+la idea de escribir un programa es trabajar menos, como por ejemplo crear un programa para imprimir los numeros pares.
+sirve para repetir algo de codigo. 
+nos permite regresar a cierto punto en el programa en el que estuvimos antes y repetirlo con nuestro estado actual. 
+
+WHILE
+es el bucle mas sencillo, ejecuta varias sentencias hasta que una deja de ser verdadera. "Sigue haciendo esto mientras esta condicion sea verdadera, detente cuando la condicion sea falsa"
+
+DRY Don't Repeat Yourself
+
+una funcion es una forma de agrupar codigo para que pueda ser reutilizado. Nos permiten ejecutar la misma pieza de codigo sin necesidad de copiar y pegar repetidamente. Es un pedazo de programa envuelto en un valor, ese valor puede ser llamado "varias veces" en diferentes lugares de tu programa. 
+
+Agrupando fragmentos de codigo en una funcion con un nombre facil de entender podemos estructurar mejor nuestro código. 
+
+'hola'+'mundo' concatenacion 
+false da el resultado de la derecha
+true da el resultado de la izquierda
+tipo boolean tiene resultado false o true
+operador ternario 
+=== compara resultados identicos 
+charAt nos devuelve la posicion del caracter, se cuenta desde cero, siempre
+slice  -x cuenta desde el final, sin 0 
+.length da el tamaño de un string, sabremos cuantos elementos hay 
+n\ es un salto de linea
+
+if: si la condicion es verdadera
+else: si la condicion es falsa
+
+break: detener 
+
+DO
+es similar a while, se diferencia en que siempre ejecuta su cuerpo, por lo menos una vez y empieza a verificar si deberia parar solo despues de la primera ejecucion. 
+el bucle continua corriendo hasta que des un valor que no sea una cadena vacia. 
+
+FOR
+verifica si el contador ha alcanzado cierto limite, el final del cuerpo del bucle, el contador es actualizado para dar seguimiento al progreso.
+
+Los paréntesis después del keyword for tienen que contener dos puntos y coma (;). La parte que está antes del primer punto y coma inicializa el bucle, normalmente al definir una variable. La segunda parte es la expresión que verifica si el bucle tiene que continuar. La parte final actualiza el estado del bucle antes de cada iteración. En la mayoría de los casos, esto es más corto y claro que una construcción con while.
+
+for (initial setup; condition; increment){
+  Bloque de código a ejecutar
+si la condicion es verdadera el cuerpo es ejecutado, si es falsa el bucle se detiene. 
+
+FORZAR LA SALIDA DE UN BUCLE 
+Hacer que la condicion del bucle produzca false no es la única forma de que un bucle termine, podemos usar la sentencia especial BREAK 
+
+-una condicion dentro de otra condicion es un if...else encadenado 
+
+los parametros son los que van entre () 
+
+function define los parametros
+expresion 
+
+<= incluye el numero
+ejemplo <= 12 incluye desde el 0 hasta el 12 
+var number = 0; 
+while (number <=12){
+console.log(number);
+number = number + 2;}
+
+/* sirve para realizar un comentario de muchas lineas */ 
+
+
+FUNCION
+es una forma de agrupar código para que pueda ser reutilizado. Las funciones nos permiten ejecutar la misma pieza de código en varios lugares de un programa sin tener que copiar y pegar el codigo. Podriamos decir que es un pedazo de programa envuelto en un valor y ese valor puede ser "llamado" varias veces, en diferentes lugares del programa para que ejecute el código que tiene dentro 
+alert(), prompt() y console.log son funciones 
+
+la aplicacion mas obvia de las funciones es la de definir un nuevo vocabulario. Crear nuevas palabras en un lenguaje humano común es indispensable en la programación. 
+Usualmente tenemos que añadir algo de nuestro propio vocabulario para evitar repetirnos demasiado
+Agrupando fragmentos de código en una función con un nombre fácil de entender 
+La definicion de una funcion es simplemente una definicion de una variable, pero donde el valor dado a una variable es una funcion, por ejemplo el siguiente codigo define la variable square para referirse a la FUNCION que produce el cuadrado de un numero dado: 
+
+var square = function(num) {
+return num * num;
+};
+
+square(12);
+// 144
+
+una funcion es creada con la keyword function, las funciones tienen un conjunto de parametros  ->() en el ejemplo anterior solo es un parametro num, y un cuerpo que contiene las sentencias a ser ejecutadas. Los parametros sirven para pasarle valores a la funcion y por ende cambiar su comportamiento segun los valores brindados. El cuerpo de la funcion tiene que estar siempre encerrado en llaves, incluso cuando sea una sola instruccion. 
+
+Para correr el codigo dentro de una funcion necesitamos "invocar, llamar o aplicar" la funcion, esto se hace escribiendo el nombre de la funcion inmediatamente seguido de unos parentesis. Dentro de los parentesis se incluye lo que le quieres "pasar" a la funcion para usar como parametro. Los valores que se pasan a la funcion para usar como parametros son llamados ARGUMETOS 
+
+
+EL VALOR DE RETORNO
+los argumentos son los valores de "entrada" (input) 
+el valor de retorno es el valor de salida (output) (es el valor que me devuelve la consola) y puede ser utilizado en cualquier lugar del programa. Si una funcion no especifica el valor del retorno, entonces la funcion retorna undefined.- 
+
+el valor de retorno se especifica con el keyword return, en el ejemplo anterior se especifica. El keyword return sin una expresion despues de el tambien hara que la funcion devuelva undefined. 
+
+RETURN
+cualquier sentencia que coloquemos despues del return en una funcion, no sera ejecutada
+una forma comun de utilizar return es para salir de la funcion de una manera temprana. 
+
+Las funciones tambien afectan el control de flujo de nuestro programa. Con funciones podemos crear estructuras repetitivas (con algo que se llama recursividad) y estructuras condicionales (con, por ejemplo, multiples valores de return) 
+existe todo un paradigma de programacion basado en funciones, esto se llama el paradigma de programacion funcional. 
+LAS FUNCIONES SON UNA FORMA DE AGRUPAR CODIGO PARA QUE PUEDA SER REUTILIZADO. O SEA EN VEZ DE ESCRIBIR UNA Y OTRA VEZ EL CODIGO, NOS HACE LA VIDA MAS FACIL Y NO TENEMOS QUE REPETIR TODO. 
+
+podemos utilizar varios return dentro de diferentes sentencias if en el cuerpo de una funcion para que la funcion devuelva un valor diferente, dependiendo del argumento brindado. 
+(ejemplo medalla por score) 
+
+
+
+ALCANCE 
+LLAVES LO MARCAN, LO QUE SE ENCUENTRA FUERA DE ELLAS NO AFECTA 
+; marca el final de la linea
+, marca la separacion de los parametros 
+
+function orderFood() 
+
+if (Number (n) === n && n % 1 === 0) {}
+
+lo primero que se realiza son las funciones
+
+index++  index = index + 1
+index--  index = index - 1
+index * = 2     index=index*2 
+index + =2    index = index+2 
+
+>= 20   muestra los numeros del 1-20 esto quiere decir que me mostrara todos los numeros, incluso el 20 
+
+ 
+
+
+
+
+[ ] ¿Por qué quisiéramos modificar el control de flujo de un programa?
+para que nuestro codigo sea mas simple de entender, sin necesidad de tener que repetirnos una y otra vez
+
+
+[ ] ¿Cuáles son las formas de modificar el flujo de un programa? Dibuja una representación de cada una 
+con las funciones como while, if, if else, 
+
+[ ] ¿Qué significa else de una sentencia if...else? Dame un ejemplo 
+si no haces una haz otra 
+
+[ ] ¿Cuál es la diferencia entre un while y un do? 
+while ejecuta una sentencia de forma infinita si se cumple una condicion solo una vez
+do while lo ejecuta al menos sola vez 
+
+[ ] ¿Cuáles son las 3 partes (sentencias) esenciales de un for? Dame un ejemplo
+variable, funcion e incremento (este ultimo no es obligacion)
+
+[ ] ¿Para qué utilizamos break y continue en un for? Dame un ejemplo 
+break lo utilizamos para cortar el codigo y continue es un salto
+
+[ ] Explica, con una analogía y en tus propias palabras, qué es un function (una función). Dibuja el concepto de una función 
+es un trozo de codigo que se puede reutilizar
+
+[ ] ¿Por qué son importantes las funciones en la programación?
+porque nos permiten ahorrar trabajo y hacerlo de forma optima 
+
+[ ] ¿Qué se entiende por DRY? 
+don't repeat yourself, no seas repetitivo, no ocupar lo mismo una y otra vez 
+
+[ ] ¿Qué significa "llamar" a una función? 
+ejecutarla, invocarla y utilizarla 
+
+[ ] ¿Qué sería un "input" (entrada) para una función y qué sería el equivalente del "output" (salida)?
+
+[ ] ¿Cuál es la diferencia entre un parámetro y un argumento de una función? 
+argumento yo le doy un valor a una funcion 
+parametro es lo que esta dentro de mi funcion (la estructura) 
+
+[ ] ¿Qué significa el valor de return de una función?
+[ ] ¿Qué sucede cuando una función tiene varios valores de return? cuando una funcion tiene muchos return lo que hace es cortarla. Es como un break
+
+[ ] ¿Por qué podemos resolver problemas más complejos sabiendo estructuras condicionales, estructuras repetitivas y funciones? Dame un ejemplo 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
